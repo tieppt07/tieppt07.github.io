@@ -1,0 +1,60 @@
+body {
+    background: url('http://static.dota188.com/images/body-bg.jpg');
+}
+header {
+    background: #191919;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 5px solid #16c2cc;
+}
+.header {
+    background: #191919;
+    color: #acacac;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #2d2d2d;
+    margin-bottom: 0;
+}
+.language {
+    margin: 10px 8px 0 8px;
+}
+.language.en {
+    background: url('http://static.dota188.com/pub/images/ico-en.png') no-repeat center center;
+}
+.language.vi {
+    background: url('http://static.dota188.com/pub/images/ico-cn.png') no-repeat center center;
+}
+nav.main-menu {
+    position: relative;
+    padding-top: 10px;
+    height: 60px;
+}
+nav.main-menu ul.navbar-nav {
+    font-weight: bold;
+    margin-left: -30px;
+}
+#logo {
+    background: #191919;
+    position: absolute;
+    top: -25px;
+    left: 100px;
+    padding: 0 35px;
+}
+#main-content {
+    background: #ddd;
+}
+#main-content .title {
+    font-size: 14px;
+}
+h3.title {
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#side-bar {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #666;
+    padding: 0;
+    color: #ccc;
+}
