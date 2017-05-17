@@ -25,19 +25,19 @@ header {
     background: url('http://static.dota188.com/pub/images/ico-cn.png') no-repeat center center;
 }
 nav.main-menu {
-    position: relative;
     padding-top: 10px;
     height: 60px;
 }
 nav.main-menu ul.navbar-nav {
     font-weight: bold;
     margin-left: -30px;
+    position: relative;
 }
 #logo {
     background: #191919;
     position: absolute;
-    top: -25px;
-    left: 100px;
+    top: -35px;
+    left: -20px;
     padding: 0 35px;
 }
 #main-content {
@@ -50,11 +50,126 @@ h3.title {
     margin: 10px;
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 #side-bar {
+    color: #ccc;
+}
+#side-bar .module {
     background: rgba(0, 0, 0, 0.4);
     border: 1px solid #666;
-    padding: 0;
+}
+.video {
+    font-size: 13px;
+}
+.video a:hover {
+    text-decoration: none;
+}
+.video a:hover .thumbnail {
+    outline: 1px solid #777;
+}
+.video a:hover .thumbnail h4 {
+    text-decoration: none;
+    color: red;
+}
+.video a:hover .thumbnail p {
+    text-decoration: none;
+}
+.event {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+.event img {
+    width: 280px;
+    height: 80px;
+}
+.event a {
+    color: black;
+    font-weight: bold;
+    font-size: 18;
+}
+.module {
+    margin-bottom: 10px;
+}
+.menu-matches {
+    list-style: none;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+.match {
+    width: 100%;
+    clear: both;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: 400;
+}
+.match:last-child {
+    border-bottom: none;
+}
+.match a {
+    color: #fff;
+}
+.match img {
+    width: 20px;
+    height: 20px;
+}
+ul.tab-list {
+    list-style-type: none;
+}
+ul.tab-list li {
+    float: left;
+    display: block;
+    padding: 2px 5px;
+}
+.module ul.nav-tabs {
+    margin: 0 10px;
+    border-bottom: 1px solid #16c0ca;
+}
+.module ul li {
+    margin-right: 2px;
+}
+.module ul.nav-tabs li a {
+    padding: 2px 5px;
+    border-radius: 0;
+    border: none;
+    border-bottom: transparent;
+    color: #fff;
+    background: none;
+}
+.module ul.nav-tabs li.active {
+    border: none;
     color: #ccc;
+    background: #16c0ca;
+}
+.module ul.nav-tabs li a:hover, .module ul.nav-tabs li a:focus {
+    border: none;
+    color: #ccc;
+    background: none;
+}
+.module ul.news {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+}
+.module ul.news a {
+    color: #fff;
+}
+.module ul.news a:hover {
+    color: #ccc;
+}
+.new {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.new:last-child {
+    border-bottom: none;
+}
+.site-footer {
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 10px 0;
+    border-top: 5px solid #16c2cc;
 }
