@@ -40,6 +40,13 @@ nav.main-menu ul.navbar-nav {
     left: -20px;
     padding: 0 35px;
 }
+nav.main-menu li.active>a,
+nav.main-menu li.active>a:focus,
+nav.main-menu li.active>a:hover {
+    color: #fff;
+    background: none !important;
+    box-shadow: none !important;
+}
 #main-content {
     background: #ddd;
 }
