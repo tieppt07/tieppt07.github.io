@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('images/bg.jpg') no-repeat fixed center center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    font-size: 62.5%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 970px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background: #fff;
+    height: 100px;
+}
+
+a#logo {
+    display: block;
+    height: 65px;
+    width: 149px;
+    background: url('images/logo_.png') no-repeat;
+    cursor: pointer;
+    margin-top: 17px;
+    float: left;
+}
+
+a#logo:hover {
+    background: url('images/logo.png');
+}
+
+ul#menu {
+    display: block;
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+ul#menu li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 16px;
+}
+
+ul#menu li a {
+    color: #a2a2a2;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+ul#menu li a:hover, ul#menu li a.active {
+    color: #da3c2c;
+}
+
+main {
+    display: block;
+    padding: 20px 0;
+}
+
+aside {
+    display: block;
+    width: 250px;
+    min-height: 400px;
+    background: #fff;
+    padding: 15px;
+    float: right;
+}
+
+#main-content {
+    display: block;
+    width: 640px;
+    min-height: 400px;
+    background: #fff;
+    padding: 15px;
+}
+
+main h2 {
+    margin-bottom: 10px;
+}
+
+main article {
+    font-size: 13px;
+}
+
+footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+

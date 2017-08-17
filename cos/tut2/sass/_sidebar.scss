@@ -1,0 +1,27 @@
+aside {
+  display: block;
+  width: 250px;
+  min-height: $main-min-height;
+  padding: 15px;
+  float: right;
+  text-align: center;
+
+  h3 {
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+  ul {
+    margin-top: 20px;
+
+    li {
+      margin-bottom: 5px;
+
+      a {
+        color: #002857;
+        font-size: 15px;
+        font-weight:600;
+      }
+    }
+  }
+}
