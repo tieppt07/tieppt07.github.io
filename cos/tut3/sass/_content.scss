@@ -1,0 +1,96 @@
+.blog {
+  display: block;
+  height: 300px;
+  article {
+    display: block;
+    float: left;
+    margin-top: 4px;
+    h2 {
+      background: url(../images/sprite.png) no-repeat;
+      background-position: 0 -1005px;
+      margin-bottom: 4px;
+      height: 61px;
+      line-height: 61px;
+      text-indent: 60px;
+      color: #fff;
+    }
+    .top {
+      width: 484px;
+      height: 19px;
+      background: url(../images/home-box-1-top.png) no-repeat;
+    }
+    .content {
+      width: 434px;
+      background: url(../images/home-box-1.png);
+      padding: 5px 25px;
+      height: 177px;
+      text-align: justify;
+      position: relative;
+      a {
+        position: absolute;
+        bottom: 5px;
+        background: url(../images/sprite.png) no-repeat;
+        background-position: 0 -912px;
+        text-indent: 25px;
+        height: 18px;
+        line-height: 18px;
+        color: #E79D90;
+      }
+      img#monster {
+        position: absolute;
+        right: 25px;
+        bottom: -60px;
+      }
+    }
+    .bottom {
+      width: 484px;
+      height: 19px;
+      background: url(../images/home-box-1-bottom.png) no-repeat;
+    }
+  }
+  #gallery {
+    display: block;
+    float: right;
+    width: 470px;
+    h2 {
+      background: url(../images/sprite.png) no-repeat;
+      background-position: 0 -691px;
+      margin-bottom: 4px;
+      height: 61px;
+      line-height: 61px;
+      text-indent: 80px;
+      color: #fff;
+    }
+    .frame {
+      display: inline-block;
+      margin-left: 3px;
+      .top {
+        width: 230px;
+        height: 6px;
+        background: url(../images/box-gallery-top.png) no-repeat;
+      }
+      .content {
+        width: 230px;
+        background: url(../images/box-gallery.png);
+        text-align: center;
+        padding: 5px 0;
+      }
+      .bottom {
+        width: 230px;
+        height: 7px;
+        background: url(../images/box-gallery-bottom.png) no-repeat;
+      }
+      a {
+        color: #797476;
+        font-size: 11px;
+        display: block;
+        margin: 5px 0;
+        font-size: 12px
+      }
+      p {
+        color: #E79D90;
+        font-size: 11px;
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+footer {
+  margin-top: 60px;
+  display: block;
+  p, h3, a, li {
+    color: #fff;
+  }
+  .top {
+    clear: both;
+    height: 26px;
+    background: url(../images/footer.png) repeat-x center;
+  }
+  .content {
+    background-color: #7c5f74;
+    height: 250px;
+  }
+  .col {
+    display: block;
+    width: 32%;
+    float: left;
+    height: 230px;
+    h3 {
+      font-size: 20px;
+      height: 37px;
+      line-height: 37px;
+      margin-bottom: 10px;
+    }
+  }
+  #open-hour {
+    h3 {
+      background: url(../images/sprite.png) no-repeat;
+      background-position: 0 -1126px;
+      text-indent: 50px;
+    }
+    ul {
+      list-style: none;
+      margin: 10px 5px;
+      li {
+        line-height: 17px;
+        text-indent: 20px;
+        background: url(../images/sprite.png) no-repeat;
+        background-position: 0 -588px;
+      }
+    }
+  }
+  #latest-news {
+    h3 {
+      background: url(../images/sprite.png) no-repeat;
+      background-position: 0 -1076px;
+      text-indent: 50px;
+    }
+    h4{
+      line-height: 20px;
+      text-indent: 30px;
+      background: url(../images/sprite.png) no-repeat;
+      background-position: 0 -1180px;
+      margin: 3px 0;
+    }
+  }
+  #social {
+    a {
+      display: block;
+      line-height: 32px;
+      color: #fff;
+      font-size: 1.2em;
+      text-indent: 40px;
+      margin-bottom: 5px;
+    }
+    .facebook {
+      background: url(../images/sprite.png) no-repeat;
+      background-position: 0 -819px;
+    }
+    .twitter {
+      background: url(../images/sprite.png) no-repeat;
+      background-position: 0 -1218px;
+    }
+    p{
+      display: block;
+      height: 75px;
+      width: 230px;
+      background: url(../images/sprite.png) no-repeat;
+      background-position: 0 -185px;
+      padding: 30px 10px 0 10px;
+      text-align: center;
+    }
+  }
+  .bottom {
+    font-size: 15px;
+  }
+}

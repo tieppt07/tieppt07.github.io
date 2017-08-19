@@ -1,0 +1,65 @@
+.intro {
+  display: block;
+  height: 280px;
+  #slide {
+    height: 265px;
+    background: url('../images/slider-whole.png');
+    padding: 12px 12px 0;
+    position: relative;
+    width: 520px;
+    float: left;
+    .pagination {
+      position: absolute;
+      right: 20px;
+      bottom: 15px;
+      li {
+        display: inline-block;
+        list-style: none;
+        margin-left: 10px;
+        &.active a, &:hover a {
+          background-image: url(../images/sprite.png);
+          background-position: 0 -1269px;
+        }
+        a {
+          display: block;
+          width: 22px;
+          height: 21px;
+          background-image: url(../images/sprite.png);
+          background-position: 0 -1310px;
+        }
+      }
+    }
+  }
+  .text {
+    margin: 20px 0 0 10px;
+    width: 400px;
+    height: 265px;
+    float: right;
+    h2 {
+      font-size: 1.8em;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    p {
+      font-size: 1.4em;
+      text-align: justify;
+      color: #fff;
+    }
+    a {
+      background: url(../images/sprite.png);
+      width: 250px;
+      height: 80px;
+      position: absolute;
+      background-position: 0 -496px;
+      text-indent: -999%;
+      margin: 20px 90px;
+      &:hover {
+        background-position:0 -402px;
+      }
+      &.active {
+        background-position:0 -308px;
+      }
+    }
+  }
+}

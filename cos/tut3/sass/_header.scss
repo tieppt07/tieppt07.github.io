@@ -1,0 +1,32 @@
+header {
+  background: url(../images/awning.png) repeat-x;
+  padding-top: 60px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  #logo {
+    width: 216px;
+    float: left;
+    background-image: url(../images/logo.png);
+    height: 49px;
+  }
+  nav {
+    float: right;
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+        margin-right: 25px;
+        height: 49px;
+        line-height: 70px;
+        padding: 0 10px;
+        &.active, &:hover {
+          background: url(../images/icon_hat.png) center top no-repeat;
+        }
+        a {
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
