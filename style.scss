@@ -261,6 +261,27 @@ nav {
     font-style: italic;
   }
 
+  table {
+    thead {
+      th {
+        padding: .75rem;
+        border: 1px solid #dee2e6;
+        border-bottom-width: 2px;
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+      }
+    }
+
+    tbody {
+      td, th {
+        padding: .75rem;
+        vertical-align: top;
+        border: 1px solid #dee2e6;
+        border-top: 1px solid #dee2e6;
+      }
+    }
+  }
+
   .comments {
     margin-top: 10px;
   }

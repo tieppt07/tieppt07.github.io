@@ -6,7 +6,7 @@ title: Một số lưu ý khi viết CSS
 ### Sử dụng Class để định dạng CSS, không nên dùng Id
 Chúng ta đã biết #id trong CSS là để chỉ đích danh một element, nó giống như số chứng minh thư của bạn, mỗi người dùng một cái, không có hai người nào có chung số CMT. Còn .class thì khác, nó để nhóm những elements có đặc điểm chung để xử lý luôn một thể.
 
-VD: 
+VD:
 ```html
 <img src="url" class="image" id="poster">
 
@@ -18,7 +18,7 @@ VD:
     width: 200px;
 }
 ```
-Bạn mong chờ kết quả hiện ra, và rồi những hình ảnh bình thường đều chỉ có width là 200px, riêng cái ảnh poster vẫn lừng lững to đùng với width 600px. Tại sao?! 
+Bạn mong chờ kết quả hiện ra, và rồi những hình ảnh bình thường đều chỉ có width là 200px, riêng cái ảnh poster vẫn lừng lững to đùng với width 600px. Tại sao?!
 Vì #id có quyền ưu tiên hơn .class.
 Một số thứ tự ưu tiên cơ bản, viết theo thứ tự giảm dần, từ ưu tiên cao tới ưu tiên thấp
 * ID > class > thẻ html
@@ -89,6 +89,8 @@ Bạn bỏ cái link ra khỏi footer vì bạn không thích nó nằm ở đó
 ```
 Như vậy thì dù là child của elements nào thì vẫn sẽ màu đỏ thôi
 
-ref: 
+ref:
 * [kipablog](https://kipalog.com/posts/Nguy-hiem-cuc-co-ban-nhung-it-de-phong-khi-lua-chon-element-de-dinh-dang-CSS)
-* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
+* [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+
+----

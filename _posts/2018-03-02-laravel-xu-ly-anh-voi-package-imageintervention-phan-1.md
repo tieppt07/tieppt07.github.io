@@ -86,3 +86,5 @@ Image::make('public/foo.jpg')->trim('top-left', null, 25, 50);
 ```
 
 Trên đây là một số hàm cơ bản để xử lí ảnh sử dụng package [Intervention Image](http://image.intervention.io/) . Các bạn có thể tìm hiểu thêm tại đây [http://image.intervention.io](http://image.intervention.io/)
+
+----

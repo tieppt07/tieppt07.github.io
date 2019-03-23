@@ -3,7 +3,7 @@ layout: post
 title: Đăng nhập bằng MagicLink thay vì Password!
 ---
 
-Bước xác minh, trong nhiều năm qua, đã có những bước tiến mạnh mẽ. Chúng ta đã chứng kiến sự thay đổi từ tổ hợp email-password sang xác minh mạng xã hội, và cuối cùng là xác minh lược bỏ password (mà thực ra lại giống kiểu xác minh "chỉ email" hơn). 
+Bước xác minh, trong nhiều năm qua, đã có những bước tiến mạnh mẽ. Chúng ta đã chứng kiến sự thay đổi từ tổ hợp email-password sang xác minh mạng xã hội, và cuối cùng là xác minh lược bỏ password (mà thực ra lại giống kiểu xác minh "chỉ email" hơn).
 Trong trường hợp login lược bỏ password, ứng dụng sẽ giả định bạn nhận login link từ inbox nếu email được cung cấp đúng là của bạn.
 
 Quy trình thường thấy của một hệ thống login không password diễn ra như sau:
@@ -19,8 +19,8 @@ Trong bài viết này, chúng ta sẽ tìm cách tích hợp hệ thống Magic
 
 ### 1. Tạo ứng dụng
 #### 1.1 Tạo project Laravel thông qua composer
-```
-composer create-project --prefer-dist laravel/laravel magiclink
+```sh
+$ composer create-project --prefer-dist laravel/laravel magiclink
 ```
 
 #### 1.2 Chuẩn bị dữ liệu
@@ -40,9 +40,10 @@ Schema::create('users', function (Blueprint $table) {
 
 #### 1.3 Generate chức năng login mặc định của Laravel
 Bằng cách chạy lệnh:
+```sh
+$ php artisan make:auth
 ```
-php artisan make:auth
-```
+
 chúng ta được như sau:
 ![](https://images.viblo.asia/b7899619-7e3d-4aea-8cf1-2a1a9a64b670.png)
 
@@ -242,4 +243,6 @@ Như vậy, chúng ta đã thành công với cách đăng nhập không passwor
 
 Hi vọng bài viết hữu ích với các bạn :)
 
-ref: https://www.sitepoint.com/lets-kill-the-password-magic-login-links-to-the-rescue/
+ref: [https://www.sitepoint.com/lets-kill-the-password-magic-login-links-to-the-rescue/](https://www.sitepoint.com/lets-kill-the-password-magic-login-links-to-the-rescue/)
+
+----

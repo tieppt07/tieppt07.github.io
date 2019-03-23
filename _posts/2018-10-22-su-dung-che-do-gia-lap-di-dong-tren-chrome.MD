@@ -3,7 +3,7 @@ layout: post
 title: Sử dụng chế độ giả lập di động trên Chrome
 ---
 
-Lập trình Website đã và đang trở nên phức tạp. Ngoài việc kiểm thử tính năng trên hàng tá trình duyệ, website của bạn cần được đánh giá thật kỹ lưỡng trên cả một loạt thiết bị đa dạng, từ di động đến máy tính với những hệ điều hành, độ phân giải, khích thước màn hình và tốc độ xử lý khác nhau. Trong những trường hợp cực đoan, thời gian cho test có thể lâu bằng thời gian phát triển ban đầu. 
+Lập trình Website đã và đang trở nên phức tạp. Ngoài việc kiểm thử tính năng trên hàng tá trình duyệ, website của bạn cần được đánh giá thật kỹ lưỡng trên cả một loạt thiết bị đa dạng, từ di động đến máy tính với những hệ điều hành, độ phân giải, khích thước màn hình và tốc độ xử lý khác nhau. Trong những trường hợp cực đoan, thời gian cho test có thể lâu bằng thời gian phát triển ban đầu.
 Rất may mắn, các trình duyệt hiện đại ngày nay đều đã cung cấp công cụ giả lập di động. Trong bài viết này chúng ta sẽ tìm hiểu về chế độ giả lập di động trên Chrome.
 
 ### Chrome Developer Tools
@@ -28,7 +28,7 @@ Các mục điều khiển mặc định gồm:
 * độ phân giải hiện tại
 * tỷ lệ (màn hình có thể được phóng to hoặc thu nhỏ để khớp với ô giả lập hơn)
 * nút chuyển đổi portrait/landscape.
-   
+
 Menu 3 chấm cho phép bạn ẩn/hiện 1 số các điều khiển khác:
 * khung thiết bị (hình ảnh minh họa của thiết bị)
 * thước pixel
@@ -71,3 +71,5 @@ Cuối cùng, Chrome cũng đã cho phép bạn kết nối một thiết bị A
 Chrome còn cho phép bạn set up port forwarding, để bạn có thể chuyển hướng đến địa chỉ web trên local server của thiết bị. Ô preview của Chrome hiển thị hình ảnh đồng bộ của màn hình thiết bị và bạn có thể tương tác đồng thời qua thiệt bị hoặc bản thân Chrome.
 
 Để test Progressive Web Apps ở chế độ offline, bạn có thể sử dụng một loạt tính năng tuyệt vời của developer tools, kể cả tab Application. Chú ý rằng, không giống ứng dụng thật có yêu cầu HTTPS, Chrome cho phép PWAs chạy từ localhost thông qua kết nối HTTP.
+
+----

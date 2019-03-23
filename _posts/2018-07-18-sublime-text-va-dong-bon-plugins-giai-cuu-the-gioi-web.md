@@ -10,7 +10,7 @@ Sublime Text 3 là một text editor khá mới, tuy miễn phí mà mạnh mẽ
 * Nhiều tính năng hữu ích như chỉnh sửa tại nhiều vị trí một lúc, soạn thảo toàn màn hình, soạn thảo với layout nhiều cột…
 * Hỗ trợ nhiều plugin mạnh mẽ bởi cộng đồng developer đông đảo.
 * Giao diện đơn giản, tinh tế, có sẵn và hỗ trợ cài đặt nhiều theme.
-… 
+…
 Bài viết này sẽ giới thiệu đến bạn 1 số plugins hỗ trợ và tăng năng suất code :D
 
 ### 1. Emmet
@@ -18,7 +18,7 @@ Công cụ cải thiện tốc độ và workflow của lập trình viên web. 
 ![](https://images.viblo.asia/4be22091-3a03-420b-9f0f-a897b2547c62.gif)
 
 ### 2. Bootstrap Snippets
-Tương tự như plugin Emmet ở trên, hỗ trợ code Bootstrap nhanh chóng. 
+Tương tự như plugin Emmet ở trên, hỗ trợ code Bootstrap nhanh chóng.
 Ví dụ : Các bạn muốn làm 1 đoạn code của Navbar trong Bootstrap, thay vì phải lên trang chủ Bootstrap hoặc ở đâu đó để copy đống code đó về, thì đơn giản chỉ cần gõ
 
 ```
@@ -73,9 +73,11 @@ Sublime Text 3 có bộ tạo sẵn Lorem Ipsum mà bạn có thể sử dụng 
 ![](https://images.viblo.asia/92eea4e3-ce9d-44e4-ae02-81bb1ceafd44.gif)
 
 ### 14. JavaScript & NodeJS Snippets
-Một plugin giúp code nhanh các function phổ biến dành cho javascript. Tại sao viết 
+Một plugin giúp code nhanh các function phổ biến dành cho javascript. Tại sao viết
 ```javascript
 document.querySelector ('selector');
 ```
 khi bạn chỉ cần gõ `qs`, nhấn tab và để Sublime làm phần còn lại.
 ![](https://images.viblo.asia/9591c0b7-c308-4696-8ce0-d2fac1673bea.gif)
+
+----

@@ -104,7 +104,7 @@ class AuthController extends Controller
      *
      * @return Response
      */
-    public function handleProviderCallback($provider) 
+    public function handleProviderCallback($provider)
     {
         // Get github's user infomation
         $user = Socialite::driver($provider)->user();
@@ -119,7 +119,7 @@ class AuthController extends Controller
             'provider_id' => $user->getId(),
             'token' => $user->token,
         ]);
-        
+
         // Login với user vừa tạo.
         Auth::login($createdUser);
 
@@ -137,3 +137,5 @@ Sơ qua về luồng xử lý:
 
 **ref:**
 [https://laravel.com/docs/5.6/socialite](https://laravel.com/docs/5.6/socialite)
+
+----

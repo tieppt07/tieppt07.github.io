@@ -3,7 +3,7 @@ layout: post
 title: Gửi SMS bằng Laravel phục vụ bảo mật 2 lớp
 ---
 
-Có rất nhiều trang web bắt xác thực tài khoản sau khi đăng kí/đăng nhập, bằng cách người dùng phải nhập 1 đoạn code được gửi về email/số đt khi đăng kí. 
+Có rất nhiều trang web bắt xác thực tài khoản sau khi đăng kí/đăng nhập, bằng cách người dùng phải nhập 1 đoạn code được gửi về email/số đt khi đăng kí.
 Trong bài viết này, chúng ta sẽ tìm cách tích hợp hệ thống bảo mật 2 lớp đơn giản bằng `Middleware` và `Session` vào ứng dụng Laravel.
 
 Quy trình thường thấy của một hệ thống login xác thực bằng số đt diễn ra như sau:
@@ -14,8 +14,8 @@ Quy trình thường thấy của một hệ thống login xác thực bằng s�
 
 ### 1. Tạo ứng dụng
 #### 1.1 Tạo project Laravel thông qua composer
-```
-composer create-project --prefer-dist laravel/laravel otp
+```sh
+$ composer create-project --prefer-dist laravel/laravel otp
 ```
 
 #### 1.2 Chuẩn bị dữ liệu
@@ -39,8 +39,8 @@ php artisan migrate
 
 #### 1.3 Generate chức năng login mặc định của Laravel
 Bằng cách chạy lệnh:
-```
-php artisan make:auth
+```sh
+$ php artisan make:auth
 ```
 chúng ta được như sau:
 ![](https://images.viblo.asia/b7899619-7e3d-4aea-8cf1-2a1a9a64b670.png)
@@ -49,13 +49,13 @@ chúng ta được như sau:
 [Nexmo](https://developer.nexmo.com/messaging/sms/code-snippets/send-an-sms) là một dịch vụ của Vonage phát triển và tiếp thị API truyền thông để cho phép các nhà phát triển và doanh nghiệp nhanh chóng đổi mới cách họ giao tiếp với khách hàng bằng cách gọi điện, nhắn tin...
 
 Cài đặt [nexmo-laravel](https://github.com/Nexmo/nexmo-laravel) thông qua composer bằng dòng lệnh:
-```
-composer require nexmo/laravel
+```sh
+$ composer require nexmo/laravel
 ```
 
 Thêm `provider` và `alias` vào file `config/app.php`:
-```
-config/app.php
+```php
+// config/app.php
 
 'providers' => [
     // Other service providers...
@@ -72,8 +72,8 @@ config/app.php
 Đăng kí tài khoản Nexmo ở đây: https://dashboard.nexmo.com/sign-up
 
 Điền key và secret của nexmo vào file `.env`
-```
-.env
+```yaml
+// .env
 NEXMO_KEY=my_api_key
 NEXMO_SECRET=my_secret
 ```
@@ -234,4 +234,6 @@ Như vậy, chúng ta đã thành công với với việc chứng thực 2 lớ
 
 Hi vọng bài viết hữu ích với các bạn :)
 
-ref: https://medium.com/techtrument/send-sms-from-laravel-application-d3ac9d1a4fac
+ref: [https://medium.com/techtrument/send-sms-from-laravel-application-d3ac9d1a4fac](https://medium.com/techtrument/send-sms-from-laravel-application-d3ac9d1a4fac)
+
+----

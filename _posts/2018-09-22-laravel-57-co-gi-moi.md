@@ -24,12 +24,12 @@ Chúng ta sẽ tìm hiểu những tính năng mới mà phiên bản 5.7 cho ra
     // 5.7
     $url = action([UserController::class, 'index']);
     $url = action([UserController::class, 'show'], ['id' => 1]);
-    
+
     // 5.6
     $url = action('UserController@index');
     $url = action('UserController@show', ['id' => 1]);
     ```
-    
+
 ### 3. New Pagination
 * Cập nhật ở phiên bản này cho phép bạn hiển thị số lượng link tùy ý ở phần phân trang với method `onEachSide`:
 
@@ -38,13 +38,13 @@ Chúng ta sẽ tìm hiểu những tính năng mới mà phiên bản 5.7 cho ra
     ```
     Mặc định sẽ có 3 trang cạnh trang hiện tại được tạo ra:
     ![](https://images.viblo.asia/9fe05196-e47c-47f6-bfd1-d19ac847d569.png)
-    
+
     ```php
     {{ $users->onEachSide(5)->links() }}
     ```
     Với config này phần phân trang sẽ hiển thị tối đa 5 link đến các trang khác.
     ![](https://images.viblo.asia/6e303ac4-64aa-484a-beaa-9200c64e1996.png)
-    
+
 ### 4. Email Verification
 * Đây là tính năng xác minh email người dùng khi sử dụng authentication mặc định của laravel.
 * Cột mới email_verified_at đã được thêm vào bảng users để phục vụ chức năng này. Bạn thậm chí không phải update lại file migration vì file này đã được cập nhật thêm cột `email_verified_at` rồi. Việc của bạn chỉ là migrate dữ liệu.
@@ -53,14 +53,14 @@ Chúng ta sẽ tìm hiểu những tính năng mới mà phiên bản 5.7 cho ra
     ```
 * Đồng thời bạn cần implement `MustVerifyEmail` interface vào model `User`:
     ```php
-    use Illuminate\Contracts\Auth\MustVerifyEmail; 
+    use Illuminate\Contracts\Auth\MustVerifyEmail;
 
-    class User extends Authenticatable implements MustVerifyEmail 
-    { 
-        // ... 
+    class User extends Authenticatable implements MustVerifyEmail
+    {
+        // ...
     }
     ```
-    
+
 ### 5. Improved Error Messages
 ![](https://images.viblo.asia/5cc22969-ef14-45a8-8caf-2e3f81f66f62.png)
 * Ở phiên bản 5.6 giả sử trong đoạn code của chúng ta có đoạn viết như sau:
@@ -91,4 +91,6 @@ Kể từ phiên bản Laravel 5.7 sẽ cải thiện các thông báo lỗi nà
 ### Kết luận
 Những thay đổi ở bản 5.7 là không quá nhiều, nhưng đó là những thay đổi tích cực, hỗ trợ tốt hơn cho chứng ta thực hiện dự án, công việc của mình.
 
-ref: https://sujipthapa.co/blog/whats-new-coming-to-laravel-57-release
+ref: [https://sujipthapa.co/blog/whats-new-coming-to-laravel-57-release](https://sujipthapa.co/blog/whats-new-coming-to-laravel-57-release)
+
+----

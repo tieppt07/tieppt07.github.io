@@ -8,11 +8,13 @@ Laravel 5.5 có các Frontend Preset là VueJS, ReactJS, AngularJS và None. Tro
 
 ## Cài đặt Laravel 5.5
 Tạo mới laravel project sử dụng `composer` command:
+```sh
+$ composer create-project --prefer-dist laravel/laravel LaravelVue
 ```
-composer create-project --prefer-dist laravel/laravel LaravelVue
-```
+
+
 Cấu hình Database trong file `.env`:
-```
+```yaml
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -20,10 +22,12 @@ DB_DATABASE=laravel_vuejs_db
 DB_USERNAME=root
 DB_PASSWORD=root
 ```
+
 Migrate dữ liệu với `command`, chúng ta được 2 bảng mặc định `users` và `password_resets`:
-```
+```sh
 php artisan migrate
 ```
+
 Tạo Route và Api Controller:
 ```php
 // Route
@@ -34,8 +38,9 @@ Route::group(['prefix' => '/v1', 'namespace' => 'Api\V1', 'as' => 'api.'], funct
     Route::resource('users', 'UsersController', ['except' => ['create', 'edit']]);
 });
 ```
+
 ```php
-<?php 
+<?php
 namespace App\Http\Controllers\Api\V1;
 
 use App\User;
@@ -91,6 +96,7 @@ class CompaniesController extends Controller
     }
 }
 ```
+
 Trong view `home.blade.php` của Laravel thêm tag:
 ```php
 @extends('layouts.app')
@@ -112,22 +118,26 @@ Trong view `home.blade.php` của Laravel thêm tag:
 @endsection
 
 ```
+
 OK, phần API đến đây là ngon lành, ta có thể test luôn với `Postman`. Tiếp theo ta sẽ đến phần Vue.js
 ## Cài đặt Preset VueJS
 Như đã nói ở trên chúng ta cài đặt VueJS Preset bằng command:
+```sh
+$ php artisan preset vue
 ```
-php artisan preset vue
-```
+
 Để compile assets, chúng ta sử dụng command:
+```sh
+$ npm install && npm run dev
 ```
-npm install && npm run dev
-```
+
 Cài thêm `vue-resource` package để có thể gọi api:
 ```js
 this.$http.get
 this.$http.post
 ...
 ```
+
 Bắt đầu code VueJS trong file `resources/assets/js/app.js`:
 ```js
 /**
@@ -153,9 +163,10 @@ const app = new Vue({
     el: '#app'
 });
 ```
+
 Tạo file `resources/assets/js/components/User.vue`:
 * Hiển thị danh sách users:
-    ```html
+```html
     <template>
         <table class="table table-hover">
             <thead>
@@ -202,9 +213,10 @@ Tạo file `resources/assets/js/components/User.vue`:
             }
         }
     </script>
-    ```
+```
+
 * Thêm chức năng thêm/sửa user trong file `resources/assets/js/app.js`:
-    ```html
+```html
     <div class="modal fade form-user" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -247,6 +259,8 @@ Tạo file `resources/assets/js/components/User.vue`:
                 this.getList();
         });
     }
-    ```
-   
+```
+
 Bạn có thể truy cập vào đường dẫn http://localhost:8000/users để xem thành quả :) Các bạn có thể tìm hiểu vào tham khảo thêm tại [Laravel](https://laravel.com/docs/5.5/frontend#writing-vue-components) và [VueJS](https://vuejs.org/v2/guide/)
+
+----

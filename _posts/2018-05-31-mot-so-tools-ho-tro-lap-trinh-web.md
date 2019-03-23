@@ -49,7 +49,9 @@ Giống với JsFiddle. Là tool hỗ trợ dev js. Có thể add thêm Library 
 Nhắc tới JsFiddle và Jsbin thì không thể không nhắc đến Codepen.
 
 ### [Postman](https://www.getpostman.com/)
-Postman là một App Extensions, cho phép làm việc với các API, nhất là REST, giúp ích rất nhiều cho việc testing. Hỗ trợ tất cả các phương thức HTTP (GET, POST, PUT, DELETE, OPTIONS, HEAD ...) 
+Postman là một App Extensions, cho phép làm việc với các API, nhất là REST, giúp ích rất nhiều cho việc testing. Hỗ trợ tất cả các phương thức HTTP (GET, POST, PUT, DELETE, OPTIONS, HEAD ...)
 
 ### [DrawIO](https://www.draw.io/)
 Draw.io là một công cụ vẽ sơ đồ rất mạnh mẽ, hỗ trợ nhiều hình khối, chạy online không cần cài đặt mà lại miễn phí và không bị giới hạn số biểu đồ như nhiều tool vẽ nền web khác. Bạn có thể vẽ sơ đồ về mạng, điện, phác thảo vị trí các căn phòng trong nhà, hay vẽ các quy trình kinh doanh, vận hành, sản xuất. Anh em làm công nghệ cũng sẽ thích Draw.io vì nó cho phép bạn vẽ hàng tá sơ đồ thiết kế phần mềm, phần cứng và hệ thống. Draw.io có thư viện template rất phong phú để bạn có thể bắt đầu nhanh hơn, không phải tự mình vẽ lại hết tự đầu.
+
+----

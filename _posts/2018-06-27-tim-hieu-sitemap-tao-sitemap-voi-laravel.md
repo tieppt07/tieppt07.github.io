@@ -10,8 +10,8 @@ Là một công đoạn nhỏ chỉ mất 5 phút để làm xong, tuy nhiên vi
 Sitemap ở đây chính là sơ đồ của trang web mà bạn đang quản trị. Một Sitemap sẽ mang trong mình 2 chức năng chính đó là:
 - Hiển thị Sitemap phục vụ nhu cầu, trải nghiệm của người dùng
 - Hiển thị Sitemap phục vụ bot tìm kiếm trong việc thu thập thông tin, dữ liệu
-Ở đây thì với Sitemap phục vụ người dùng và Sitemap dàng riêng cho các bot tìm kiếm sẽ có những sự khác nhau. Đối với Sitemap hiển thị đến người dùng, Sitemap này chỉ nên hiển thị theo phân cấp website kèm với đó là bạn sẽ không nên sử dụng bất kỳ hiệu ứng hình ảnh nào cả. Đối với Sitemap phục vụ bot tìm kiếm, chúng vô hình chung là những dòng lệnh XML được sắp xếp có trình tự. 
-Sitemap dành cho bot tìm kiếm là một tập tin XML có tên sitemap.xml. Trong đó, các biến trong tập tin này sẽ được khai báo hoàn toàn khác nhau dựa vào mức độ quan trọng, lần cập nhập cuối hay đường dẫn của trang. Sau đây sẽ là ví dụ về tập tin XML mà bot tìm kiếm sẽ nhìn thấy. 
+Ở đây thì với Sitemap phục vụ người dùng và Sitemap dàng riêng cho các bot tìm kiếm sẽ có những sự khác nhau. Đối với Sitemap hiển thị đến người dùng, Sitemap này chỉ nên hiển thị theo phân cấp website kèm với đó là bạn sẽ không nên sử dụng bất kỳ hiệu ứng hình ảnh nào cả. Đối với Sitemap phục vụ bot tìm kiếm, chúng vô hình chung là những dòng lệnh XML được sắp xếp có trình tự.
+Sitemap dành cho bot tìm kiếm là một tập tin XML có tên sitemap.xml. Trong đó, các biến trong tập tin này sẽ được khai báo hoàn toàn khác nhau dựa vào mức độ quan trọng, lần cập nhập cuối hay đường dẫn của trang. Sau đây sẽ là ví dụ về tập tin XML mà bot tìm kiếm sẽ nhìn thấy.
 
 
 Trong đoạn code dưới thì loc là biến đường dẫn, lastmod là sự thay đổi và priority là độ quan trọng
@@ -45,18 +45,18 @@ b. Vai trò của Sitemap trong Seo: Sitemap sẽ là một yếu tố cần thi
 
 ### 3. Tạo Sitemap với Laravel
 **Cài đặt gói [roumen/sitemap](https://github.com/Laravelium/laravel-sitemap) với terminal:**
-```
-composer require roumen/sitemap
+```sh
+$ composer require roumen/sitemap
 ```
 
 **Thêm Servide Provider:**
-```
+```php
 Roumen\Sitemap\SitemapServiceProvider::class,
 ```
 
 **Publish các file config:**
-```
-php artisan vendor:publish --provider="Roumen\Sitemap\SitemapServiceProvider"
+```sh
+$ php artisan vendor:publish --provider="Roumen\Sitemap\SitemapServiceProvider"
 ```
 
 **Ví dụ: Generate sitemap xml:**
@@ -85,5 +85,7 @@ Route::get('mysitemap', function(){
 ```
 
 Tham khảo:
-* https://github.com/Laravelium/laravel-sitemap
-* https://laravel-news.com/laravel-sitemap
+* [https://github.com/Laravelium/laravel-sitemap](https://github.com/Laravelium/laravel-sitemap)
+* [https://laravel-news.com/laravel-sitemap](https://laravel-news.com/laravel-sitemap)
+
+----
