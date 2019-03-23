@@ -1,90 +1,130 @@
 ---
 layout: post
-title: Laravel xử lý ảnh với package ImageIntervention Phần 2
+title: Laravel xử lý ảnh với package ImageIntervention Phần 1
 ---
 
-Chúng ta tiếp tục tìm hiểu về các functions trong package ImageIntervention trong phần 2. 😃
+## Introduction
+Intervention Image là một thư viện xử lý ảnh mã nguồn mở PHP. Nó cung cấp một cách dễ dàng để tạo, chỉnh sửa hình ảnh và hỗ trợ hiện tại hai thư viện xử lý ảnh phổ biến nhất là GD Library và Imagick.
 
-### Change color balance of an image
+## Installation
+Yêu cầu môi trường:
+Bắt buộc
+* PHP >= 5.4
+* Fileinfo Extension
+* GD Library (>=2.0)
+* Imagick PHP extension (>=6.5.7)
+
+Cài đặt thông qua composer:
+
+`composer require intervention/image`
+
+Thêm `providers` và `aliases`:
+
 ```php
-// value between -100 and +100
-$img->colorize($red, $green, $blue);
+Intervention\Image\ImageServiceProvider::class
 
-// take out red color and add blue
-$img->colorize(-100, 0, 100);
+...
 
-// just add a little green tone to the image
-$img->colorize(0, 30, 0);
+'Image' => Intervention\Image\Facades\Image::class
 ```
 
-### Change the brightness of an image
+Sử dụng `ImageIntervention` trong Laravel:
 ```php
-// value between -100 and +100
-// increase brightness of image
-$img->brightness(35);
+// include composer autoload
+require 'vendor/autoload.php';
+
+// import the Intervention Image Manager Class
+use Intervention\Image\ImageManagerStatic as Image;
+
+// configure with favored image driver (gd by default)
+Image::configure(array('driver' => 'imagick'));
+
+// and you are ready to go ...
+$img = Image::make('public/foo.jpg')->resize($width, $height);
 ```
 
-### Change the contrast of an image
+## Functions
+### Đọc thông số của image
 ```php
-// value between -100 and +100
-// increase brightness of image
-$img->contrast(65);
+// read width of image
+$img->width();
+
+// get file size
+$img->->filesize();
+
+// read height of image
+$img->height();
 ```
 
-### Destroy - Free up memory
-Giải phóng RAM với ảnh hiện tại trước khi đoạn mã PHP kết thúc.
+### Tạo empty image
 ```php
-// create an image
-$img = Image::make('public/foo.jpg');
+// create a new empty image resource with transparent background
+$img = Image::canvas($width, $height);
 
-// perform some modifications and destroy resource
-$img->resize(320, 240);
-$img->save('public/small.jpg');
-$img->destroy();
+// create a new empty image resource with red background
+$img = Image::canvas($width, $height, $backgroundColor);
 ```
 
-### Mirror an image
+### Resize
+Thay đổi kích thuước ảnh dựa theo chiều rộng và chiều dài của ảnh:
 ```php
-// h for horizontal (default) or v for vertical flip
-// flip image vertically
-$img->flip('v');
+// resize image to fixed size
+$img->resize($width, $height);
+
+// resize only the width of the image
+$img->resize($width, null);
+
+// resize only the height of the image
+$img->resize(null, height);
+
+// resize the image to a width of 300 and constrain aspect ratio (auto height)
+$img->resize($width, null, function ($constraint) {
+    $constraint->aspectRatio();
+});
+
+// resize the image to a height of 200 and constrain aspect ratio (auto width)
+$img->resize(null, height, function ($constraint) {
+    $constraint->aspectRatio();
+});
+
+// prevent possible upsizing
+$img->resize(null, height, function ($constraint) {
+    $constraint->aspectRatio();
+    $constraint->upsize();
+});
 ```
 
-### Invert colors of an image
+### Rotate
+Xoay ảnh theo 1 góc nhất định:
 ```php
-// create Image from file and reverse colors
-$img = Image::make('public/foo.jpg')->invert();
+// rotate image 45 degrees clockwise
+$img->rotate(-$degree);
 ```
 
-### Set opacity of an image
+### Crop
+Cắt ảnh dựa theo chiều được xác định:
 ```php
-// 100% for opaque and 0% for full transparency
-// create new Intervention Image from file and set image full transparent
-$img->opacity(0);
+// crop image
+$img->crop($width, $height, $xCordinateTopLeft, $yCordinateTopLeft);
 ```
 
-### Trim away parts of an image
-Chức năng này cần sử dụng thêm driver GD
+### Fit
+Kết hợp crop và resize 1 cách thông minh: xử lí ảnh theo tỉ lệ kích thước của ảnh:
 ```php
-// trim image (by default on all borders with top-left color)
-Image::make('public/foo.jpg')->trim();
+// crop the best fitting 5:3 (600x360) ratio and resize to 600x360 pixel
+$img->fit($width = 600, $height = 360);
 
-// trim image (on all borders with bottom-right color)
-Image::make('public/foo.jpg')->trim('bottom-right');
+// crop the best fitting 1:1 ratio (200x200) and resize to 200x200 pixel
+$img->fit($width = 200);
 
-// trim image (only top and bottom with transparency)
-Image::make('public/foo.jpg')->trim('transparent', array('top', 'bottom'));
-
-// trim image (only left side top-left color)
-Image::make('public/foo.jpg')->trim('top-left', 'left');
-
-// trim image on all borders (with 40% tolerance)
-Image::make('public/foo.jpg')->trim('top-left', null, 40);
-
-// trim image and leave a border of 50px by feathering
-Image::make('public/foo.jpg')->trim('top-left', null, 25, 50);
+// add callback functionality to retain maximal original image size
+$img->fit($width = 800, $height = 600, function ($constraint) {
+    $constraint->upsize();
+});
 ```
 
-Trên đây là một số hàm cơ bản để xử lí ảnh sử dụng package [Intervention Image](http://image.intervention.io/) . Các bạn có thể tìm hiểu thêm tại đây [http://image.intervention.io](http://image.intervention.io/)
+Trên đây là 1 vài các chức năng cơ bản của package `Intervention Image`. Mình sẽ giới thiệu tiếp thêm các chức năng ở phần sau :)
+
+reference: [Intervention Image](http://image.intervention.io/)
 
 ----
