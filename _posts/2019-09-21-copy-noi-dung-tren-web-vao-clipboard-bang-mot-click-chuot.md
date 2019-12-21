@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Copy nội dung trên web page vào clipboard bằng một click chuột
+title: Copy nội dung trên web vào clipboard bằng một click chuột
 ---
 
 Khi sử dụng một web page, rất nhiều khi người dùng sẽ cần copy một nội dung có sẵn. Những nội dung này nhiều khi nhà phát triển có thể dễ dàng đoán được. Ví dụ như 2 nền tảng Git nổi tiếng là Github và Bitbucket, ở khu vực hiển thị repo url, họ đều trang bị sẵn một button giúp người dùng dễ dàng copy repo url chỉ bằng 1 click chuột.
