@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Giới thiệu về JSLint
+title: Tìm hiểu AdonisJS - Laravel phiên bản NodeJS
 ---
 
 ### 1. AdonisJS là gì?
@@ -187,7 +187,7 @@ Route
   .get('users/:id', 'UserController.show')
   .as('profile')
 #View
-{{ linkTo('profile', 'View Profile', { id: 1 }) }}
+linkTo('profile', 'View Profile', { id: 1 })
 
 // Hoặc route resource: resource(name, controller)
 
