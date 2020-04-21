@@ -3,8 +3,6 @@ layout: post
 title: Tạo ChatBot Chatwork bằng Google Script
 ---
 
-![](/images/posts/apps_script_64dp.png)
-
 GAS là ngôn ngữ scripting dựa trên JavaScript cho phép người dùng thao tác với các sản phẩm của gói dịch vụ G Suite như Docs, Sheets hay Forms. Một số việc chúng ta có thể làm được với GAS như:
 
 - Thêm menu, dialog hay sidebar vào Google Doc, Sheet và Form.
@@ -13,6 +11,9 @@ GAS là ngôn ngữ scripting dựa trên JavaScript cho phép người dùng th
 - Giao tiếp với các dịch vụ khác của Google như AdSense, Analytics, Calendar, Drive, Gmail và Maps.
 - Xây dựng các add-on mở rộng cho Google Docs, Sheets, Forms và đưa chúng lên Add-on store.
 - Chuyển một ứng dụng Android thành add-on Android có thể trao đổi dữ liệu với Google Doc hay Google Spreadsheet của người dùng trên thiết bị di động.
+
+![](/images/posts/apps_script_64dp.png)
+
 
 ### 1. Đặt vấn đề
 Trong công ty thì mọi người sẽ liên lạc với nhau thông qua một phần mềm nào đó như Slack, Skype or Chatwork… 

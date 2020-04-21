@@ -3,9 +3,9 @@ layout: post
 title: Hack các trang WordPress trên shared server
 ---
 
-![wordpress](/assets/wordpress.png)
-
 Một trang web chỉ an toàn như mắt xích yếu nhất trên shared server của nó. Một khi hacker chiếm được quyền truy cập vào một trang trên server, họ có thể dễ dàng xâm nhập vào các trang khác nằm trên cùng máy chủ có cùng quyền hạn. Điều này gọi là `cross-site contamination`. Khi điều tương tự xảy đến với các trang web sử dụng WordPress thì nó càng trở nên nguy hiểm vì các hacker đã nắm rõ cấu trúc core trong lòng bàn tay.
+
+![wordpress](/assets/wordpress.png)
 
 Người dùng WordPress hiểu rằng tập tin `wp-config.php` chứa thông tin chứng thực cơ sở dữ liệu nên việc ngăn người lạ có khả năng đọc tập tin nhạy cảm này là rất quan trọng. Nếu các hacker đánh cắp được những chứng thực cơ sở dữ liệu này, họ sẽ có thể làm những việc ví dụ như: tạo ra các tài khoản quản trị viên mới hoặc chèn dữ liệu spam vào các bài viết.
 

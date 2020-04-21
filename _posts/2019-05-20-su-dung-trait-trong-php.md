@@ -3,9 +3,9 @@ layout: post
 title: Sử dụng Trait trong PHP
 ---
 
-![](/images/posts/develo-design-social-hero-1024x536.jpg)
-
 Trong khi phát triển tính năng mới, tôi thấy cần phải sử dụng lại các phương thức ở các class khác, mà PHP lại không hỗ trợ đa kế thừa. Rất may họ đã sinh ra Traits để giải quyết vấn đề này.
+
+![](/images/posts/develo-design-social-hero-1024x536.jpg)
 
 Có một đoạn code ví dụ đơn giản như thế này:
 ```php

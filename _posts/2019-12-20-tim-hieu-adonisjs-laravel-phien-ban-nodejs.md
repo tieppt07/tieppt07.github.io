@@ -3,9 +3,9 @@ layout: post
 title: Tìm hiểu AdonisJS - Laravel phiên bản NodeJS
 ---
 
-### 1. AdonisJS là gì?
-
 Nodejs là một công nghệ đang nổi, đồng nghĩa với việc Javascript ngày càng trở nên phổ biến hơn. Có rất nhiều framework node js được sinh sôi hàng ngày. Trong đó có một MVC framwork cũng đang phổ biến `AdonisJS`.
+
+### 1. AdonisJS là gì?
 
 AdonisJs được lấy cảm hứng từ một PhP Framework gọi là `Laravel`. Nó mượn các khái niệm về tiêm phụ thuộc và các nhà cung cấp dịch vụ để viết code đẹp có thể kiểm chứng được tới cốt lõi của nó. Kế thừa những tính năng nổi bật của nodejs, Adonis cũng tập trung vào một số thành phần khác hỗ trợ như:
 

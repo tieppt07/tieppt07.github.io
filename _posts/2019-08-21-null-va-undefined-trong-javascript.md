@@ -3,6 +3,8 @@ layout: post
 title: null và undefined trong Javascript
 ---
 
+Khi làm quen với Javascript, mình đã tự hỏi tại sao lại có 2 giá trị đều mang nghĩa là "không có gì cả", đó là null và undefined. Đây là một trong những điểm dễ gây nhầm lẫn, null và undefined, hai khái niệm này không thể đồng nhất làm một dù cho ý nghĩa thực tế của chúng lại tương đối giống nhau. Vậy sự khác biệt giữa null và undefined là gì?
+
 ### Null?
 - null đại diện cho một giá trị không tồn tại
 - null không mặc định có mà phải được gán một cách chủ đích

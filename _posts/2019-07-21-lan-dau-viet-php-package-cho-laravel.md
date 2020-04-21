@@ -3,8 +3,9 @@ layout: post
 title: Lần đầu viết PHP package cho Laravel
 ---
 
-![](/images/posts/Packagist.png)
 Hiện nay, Laravel là một framework PHP được rất nhiều công ty sử dụng để triển khai các dự án. Khi thực hiện một chức năng trong ứng dụng laravel có nhiều chức năng ở trong nhiều dự án khác nhau. Vậy nên để sử dụng lại các chức năng đó chúng ta tạo một package, khi cần sử dụng chúng ta chỉ cần require vào ứng dụng laravel của mình. Vậy để làm sao để tạo và publish một package? Cùng mình tìm hiểu trong bài viết này nhé. Bắt đầu nào 😄
+
+![](/images/posts/Packagist.png)
 
 ### 1. Cài đặt project Laravel
 Vì một package được tạo để thêm chức năng bổ sung cho ứng dụng Laravel của chúng ta, nên điều đầu tiên chúng ta cần làm là cài đặt project Laravel. Cách đơn giản nhất là:

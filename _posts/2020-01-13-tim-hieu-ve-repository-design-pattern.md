@@ -3,6 +3,9 @@ layout: post
 title: Tìm hiểu về Repository Design Pattern
 ---
 
+Design patterns là các giải pháp đã được tối ưu hóa, được tái sử dụng cho các vấn đề lập trình mà chúng ta gặp phải hàng ngày. Nó là một khuôn mẫu đã được suy nghĩ, giải quyết trong tình huống cụ thể rồi.
+Repository Pattern là một mẫu thiết kế trong design pattern.
+
 ### Repository Design Pattern
 
 Trong bài viết này, tôi cùng các bạn sẽ cùng nhau thảo luận về `Repository Pattern` nhưng trước hết hãy cùng nhau tìm hiểu qua về `Design Pattern`

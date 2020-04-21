@@ -3,8 +3,9 @@ layout: post
 title: Viết API docs với Laravel Apidoc Generator
 ---
 
-![](/images/posts/201906-banner-0_kO-ZlVt37tyk9TlK.jpg)
 Sau một thời gian dài viết document API bằng "cơm" thì được anh em khai sáng cho một số Tools hỗ trợ. Trong bài viết này, mình xin phép được chia sẻ một công cụ khá hay cũng như sơ qua cách sử dụng `Laravel Api Doc Generator`.
+
+![](/images/posts/201906-banner-0_kO-ZlVt37tyk9TlK.jpg)
 
 ### 1. Cài đặt
 #### Yêu cầu

@@ -3,9 +3,9 @@ layout: post
 title: Một số plugins cần thiết cho WordPress website
 ---
 
-![wordpress](/assets/Looking-for-a-WordPress-Developer-1042x665.jpg)
-
 WordPress là một trong những mã nguồn mở nổi tiếng và được sử dụng rộng rãi nhất hiện nay! Theo thống kê của [https://w3techs.com/](https://w3techs.com/) thì hiện nay các hệ thống mã nguồn mở (CMS) được sử dụng chiếm tới 44% trên tổng số toàn bộ các website. Trong đó riêng WordPress chiếm tới 36.2% tổng số các website đang hoạt động hiện nay.
+
+![wordpress](/assets/Looking-for-a-WordPress-Developer-1042x665.jpg)
 
 ![wordpress](/assets/ScreenShot2020-03-21at22.16.47.png)
 
