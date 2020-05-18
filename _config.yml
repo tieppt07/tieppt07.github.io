@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: TiepPX
+title: TiepxDev
 
 # Short description of your site
 description: Personal Blog
@@ -28,7 +28,7 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.jpeg"
+avatar: "/img/avatar-icon.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -93,7 +93,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "tieppt07.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "tiepxdev.xyz"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
