@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Enum trong TypeScript, những điều có thể bạn chưa biết
+published: false
 ---
 
 Cùng tìm hiểu về TypeScript Enum một cách toàn diện nhất có thể và tiếp tục cảm nhận sứ mệnh scaling mà TypeScript mang lại.
