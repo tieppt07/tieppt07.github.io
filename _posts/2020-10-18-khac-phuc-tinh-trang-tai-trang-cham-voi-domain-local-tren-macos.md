@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Khắc phục tình trạng tải trang chậm với domain .local trên MacOS
+published: false
 ---
 
 Nguyên nhân và cách khắc phục tình trạng tên miền .local phản hồi rất chậm trên MacOS
