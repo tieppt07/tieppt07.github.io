@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Flat file CMS
+published: false
 ---
 
 Một hệ quản trị nội dung (CMS) thường đi kèm với 2 thành phần chính ở phía server gồm Data Layer (Database) và Application Layer. Tuy nhiên, đôi khi mô hình này trở nên dư thừa với những yêu cầu ko cần đến độ phức tạp cao. Từ thực tiễn này, `Flat-file CMS` ra đời.
