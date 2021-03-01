@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Progressive Web App (part 1): Offline-first"
+published: false
 ---
 
 Trong series này, chúng ta sẽ cùng tìm hiểu một công nghệ không quá xa lạ nhưng rất hữu ích trong Web Development - Progressive Web App.

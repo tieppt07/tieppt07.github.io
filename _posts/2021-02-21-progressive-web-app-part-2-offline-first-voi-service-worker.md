@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Progressive Web App (part 2): Offline-first với Service Worker"
+published: false
 ---
 
 Ở phần trước của series Progressive Web App (PWA), chúng ta đã đi qua vấn đề tồn đọng lớn của Single Page App (SPA) - không có khả năng hoạt động offline, và cách giải quyết của PWA - cũng là ưu điểm lớn nhất của PWA - Offline-First strategy. Trong phần tiếp theo này, chúng ta sẽ tìm hiểu sâu hơn về Service Worker - thứ đem lại sức mạnh Offline-first cho PWA.
