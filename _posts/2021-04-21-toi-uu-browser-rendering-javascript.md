@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Tối ưu browser rendering: Javascript"
+published: false
 ---
 
 60fps là mục tiêu cuối cùng của một web page "mượt"
@@ -193,7 +194,7 @@ Giới hạn của worker thread là sẽ không thể sử dụng được:
 - DOM API
 - window object
 - document object
-  
+
 Vì vậy, worker sẽ thích hợp với các tác vụ thuần tính toán, xử lý dữ liệu đủ lớn hoặc thuật toán phức tạp.
 
 Các bạn có thể đọc bài viết trước đây của mình về Web Worker nếu muốn tìm hiểu rõ hơn.
