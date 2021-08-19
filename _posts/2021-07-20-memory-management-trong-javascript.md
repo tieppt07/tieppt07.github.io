@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Memory management trong Javascript"
+published: false
 ---
 
 Không giống như các ngôn ngữ bậc thấp, lập trình viên phải chủ động cấp phát, giải phóng bộ nhớ, Javascript sẽ tự tính toán bộ nhớ cần thiết và tự thu hồi bộ nhớ khi biến đó không được sử dụng nữa.
